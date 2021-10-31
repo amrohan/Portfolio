@@ -1,15 +1,16 @@
+import React from "react";
 import Head from "next/head";
-import HomePage from "./components/HomePage";
+import About from "./components/About";
 
-export default function Home() {
-  var homepage = "Homepage";
+export default function about() {
+  var about = "About Page 🔥";
   return (
     <div className="w-screen h-screen dark:bg-gray-950 dark:text-white">
       <Head>
-        <title>Rohan Salunkhe | {homepage} </title>
+        <title>Rohan Salunkhe | {about}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomePage />
+      <About/>
     </div>
   );
 }
