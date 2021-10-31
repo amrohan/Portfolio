@@ -14,16 +14,12 @@ const NotFound = () => {
     // passing empty array so it can run when the component first load
   }, []);
   return (
-    <div className="flex flex-col justify-center w-screen h-screen dark:bg-gray-950 dark:text-white">
-      <h1 className="w-full text-center font-semibold text-8xl text-purple-300">
-        404
-      </h1>
-      <img src="/404.svg" width="200" height="200" alt="404 page" />
-      <Link href="/" passHref>
-        <button className="bg-red-300  dark:bg-red-300 dark:text-black rounded-full h-10 mx-28 sm:mx-96 mt-1">
-          Go to HomePage
-        </button>
-      </Link>
+    <div className="bg-gray-950 w-screen h-screen text-white">
+      <div className="h-full grid place-items-center">
+        <h1 className="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-800">
+          404
+        </h1>
+      </div>
     </div>
   );
 };
