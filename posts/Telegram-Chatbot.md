@@ -77,7 +77,7 @@ Now that your python bot is fully functional, simply modify the file in response
 
 ## Deploying bot on Heroku :
 
-1. If you don't already have one, create one on Heroku [Login](https://id.heroku.com/login)
+1. If you don't already have one, create one on Heroku 🤞 [Login](https://id.heroku.com/login)
 2. Now just create new app on Heroku.
 3. Connect your GitHub repository, which is where you have uploaded your code.
 4. After connecting it just click on deployed
