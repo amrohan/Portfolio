@@ -37,15 +37,14 @@ Before we begin, you should be familiar with the fundamentals of HTML and CSS.
 
 ## FAQ
 
-#### How can i use this ?
-
+<details>
+<summary>How can i use this ?</summary>
 Simply fork the repository or download the source code.
-
-#### Is it possible to utilise this for free?
-
+</details>
+<details>
+<summary>Is it possible to utilise this for free?</summary>
 As I previously stated, it is completely free and open source for you to modify as you want.
-
-##### If you enjoy this repository, please give it a star. 🌟
+</details>
 
 ## Contact Me
 
