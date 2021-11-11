@@ -19,7 +19,7 @@ const HomePage = () => {
                   Rohan Salunkhe
                 </span>
               </h1>
-              <h4 className="semi-bold italic text-blue-400">
+              <h4 className="semi-bold italic">
                 A just curious developer with a passion for learning and
                 building
                 <span className="bold text-3xl text-blue-500">.</span>
