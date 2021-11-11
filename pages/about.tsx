@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import About from "./components/About";
+import About from "./components/about";
 
 export default function about() {
   var about = "About Page 🔥";
@@ -10,7 +10,7 @@ export default function about() {
         <title>Rohan Salunkhe | {about}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <About/>
+      <About />
     </div>
   );
 }

@@ -3,21 +3,30 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div className=" w-screen text-bold font-mono pt-40 dark:bg-gray-950 dark:text-white overflow-hidden">
-      <h1 className="text-center font-semibold text-4xl md:text-6xl">
-        About Me
+    <div className="text-bold pt-40  dark:bg-gray-950 dark:text-white md:flex md:flex-col md:justify-center md:pt-0 md:h-screen md:w-screen md:text-right">
+      <h1 className="text-2xl font-bold text-left md:text-center mb-4 leading-8 ">
+        {/* Passing empty string for blank space */}
+        <span className="font-semibold text-3xl dark:text-gray-300 md:hidden">
+          {"Hello, there 👋"}
+        </span>
+        <br />
+        <span className="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-800">
+         About Page is under
+        </span>{" "}
+        <br className="md:hidden" />
+        <span className="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-blueGray-900 to-pink-700">
+          Development
+        </span>
       </h1>
-      <p className="mt-4 px-7 text-center md:px-10 md:mt-8 ">
-        {
-          " Hello, my name is Rohan Salunkhe, and I'm a self-taught developer that loves the process of building things."
-        }
-      </p>
-      <div className="mx-24 md:mx96 md:px-96">
-        <Link href="/blog" passHref>
-          <button className="relative mt-8 text-center w-full bg-purple-300  dark:bg-purple-300 dark:text-black rounded-full h-10 ">
-            <a>Explore Projects</a>
-          </button>
-        </Link>
+      <div className="text-xl ml-4 md:text-center md:ml-0 text-gray-400">
+        <p>
+          {"In the meantime, take a look at my"}
+          <Link href="/blog">
+            <a className="p-2 text-yellow-500 font-mono font-semibold text-2xl hover:text-green-600">
+              Blog 
+            </a>
+          </Link>
+        </p>
       </div>
     </div>
   );
