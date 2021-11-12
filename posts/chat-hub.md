@@ -16,7 +16,7 @@ Website Link 👉 [Click Me](https://chat-hub.rohan.ml)
 
 ### Screenshots :
 
-![Chat hub screenshot](?Images/chathub.webp)
+![Chat hub screenshot](/Images/chathub.webp)
 
 #### Installation :
 
