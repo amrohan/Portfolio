@@ -2,6 +2,7 @@
 title: "Chat App using Nextjs"
 date: " Aug 12 2021"
 desc: "Testing the baisc post"
+type: "Project"
 cover_img: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNoYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
 ---
 
@@ -15,7 +16,7 @@ Website Link 👉 [Click Me](https://chat-hub.rohan.ml)
 
 ### Screenshots :
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j0isihn4ve2ecz41njyv.jpg)
+![Chat hub screenshot](?Images/chathub.webp)
 
 #### Installation :
 

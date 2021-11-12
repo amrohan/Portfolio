@@ -5,7 +5,7 @@ import marked from "marked";
 import styles from "../../styles/content.module.css";
 
 export default function PostPage({
-  frontmatter: { title, date, cover_img },
+  frontmatter: { title, date, cover_img, type },
   slug,
   content,
 }) {
@@ -22,7 +22,7 @@ export default function PostPage({
           {/* Using here to make it available in dark and light mode */}
           <div className="dark:text-white text-black">
             <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
-              Porject
+              {type}
             </span>
             <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
               {title}
@@ -38,7 +38,7 @@ export default function PostPage({
               <div className="flex items-center">
                 <img
                   className="object-cover h-10 rounded-full"
-                  src="https://avatars.githubusercontent.com/u/73811790?s=120&v=4"
+                  src="/Images/me.webp"
                   alt="Avatar"
                 />
                 <a

@@ -2,6 +2,7 @@
 title: "Telegram ChatBot"
 date: "september 22 2021"
 desc: "Testing the baisc post"
+type: "Project"
 cover_img: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
 ---
 
@@ -11,7 +12,7 @@ A is a simple Telegram bot that responds to users automatically when they commun
 
 Test the bot here 👉 [Chat-Bot](https://t.me/amrohanbot)
 
-![https://dev-to-uploads.s3.amazonaws.com/uploads/articles/luocata9aopbnrfspp2v.jpg](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/luocata9aopbnrfspp2v.jpg)
+![Chat Bot Image](/Images/chatbot.webp)
 
 ## Create Bot
 

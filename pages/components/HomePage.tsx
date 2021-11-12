@@ -6,7 +6,7 @@ const HomePage = () => {
       <div className="flex flex-col justify-center text-center align-center">
         <div className="grid place-items-center mr-auto ml-auto">
           <img
-            src="https://avatars.githubusercontent.com/u/73811790?s=120&v=4"
+            src="/Images/me.webp"
             alt=""
             className=" justify-center text-center alignt-center rounded-full border-4 border-gray-400 p-2 border-opacity-100 "
           />
