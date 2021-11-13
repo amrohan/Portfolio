@@ -12,7 +12,7 @@ const NotFound = () => {
     // passing empty array so it can run when the component first load
   }, []);
   return (
-    <div className="bg-gray-950 w-screen h-screen text-white">
+    <div className="dark:bg-gray-950 w-screen h-screen dark:text-white">
       <div className="h-full grid place-items-center w-auto">
         <div>
           <img src="/404.svg" alt="" width={250} height={32} />
