@@ -70,8 +70,8 @@
   padding: 1rem;
   overflow: auto;
   margin: 1.75rem 0 0 0;
-  background-color: #161b22;
-  color: #fffafa;
+  background-color: #07182c; 
+  border-radius: 10px;
 }
 
 .content pre code {
@@ -86,7 +86,7 @@
   font-size: 85%;
   padding: 0.2em 0.4em;
   margin: 0;
-  background-color: #161b22;
+  background-color: #a50942;
   border-radius: 3px;
   color: #fffafa;
 }
