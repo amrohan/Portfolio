@@ -86,9 +86,8 @@
   font-size: 85%;
   padding: 0.2em 0.4em;
   margin: 0;
-  background-color: #a50942;
+  color: #e02929;
   border-radius: 3px;
-  color: #fffafa;
 }
 
 .content blockquote {
@@ -156,7 +155,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 90%;
 }
 
 @media (min-width: 769px) {
