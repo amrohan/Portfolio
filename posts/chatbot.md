@@ -47,10 +47,10 @@ The steps to execute this on your local machine are as follows:
   git clone https://github.com/amrohan/ChatBot
 ```
 
-1. After that install requirement.txt
+2. After that install requirement.txt
 
 ```
-pip install install requirement.txt
+pip install -r requirement.txt
 ```
 
 OR

@@ -13,12 +13,12 @@ const HomePage = () => {
           <div className="mt-4 mb-5 typo p-10">
             <h1 className=" text-2xl my-4 md:text-4xl typed-out">
               {"Hello, I’m"}
-              <span className=" semibold text-2xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+              <span className=" semibold text-2xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-blueGray-900 to-pink-700">
                 {" "}
                 Rohan Salunkhe
               </span>
             </h1>
-            <p className="font-extralight text-lg italic">
+            <p className="font-extralight text-lg italic ">
               A just curious developer with a passion for learning and building
               <span className="bold text-3xl">.</span>
             </p>
