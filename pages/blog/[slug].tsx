@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import marked from "marked";
+import {marked} from "marked";
 import styles from "../../styles/content.module.css";
 import Link from "next/link";
 
