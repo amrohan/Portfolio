@@ -54,7 +54,6 @@ export default function blog({ posts }) {
 export async function getStaticProps() {
   // This will find directory
   const files = fs.readdirSync(path.join("posts"));
-  console.log(files);
 
   // This will give frontmatter and slug from post
   const posts = files.map((filename) => {
