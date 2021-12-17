@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import {marked} from "marked";
+import { marked } from "marked";
 import styles from "../../styles/content.module.css";
 import Link from "next/link";
 
@@ -26,11 +26,12 @@ export default function PostPage({
               <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
                 {type}
               </span>
-              <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
+              {/* <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
                 {title}
-              </span>
-              <div className={styles.content}>
+              </span> */}
+              <div className="prose lg:prose-l dark:text-white">
                 <div
+                  className={styles.content}
                   dangerouslySetInnerHTML={{ __html: marked(content) }}
                 ></div>
               </div>

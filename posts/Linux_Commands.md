@@ -1,6 +1,6 @@
 ---
 title: "Linux Commands"
-date: "november 13 2021"
+date: "Nov 13 2021"
 desc: "Testing the baisc post"
 type: "Blog"
 cover_img: "/Images/li.png"
@@ -25,7 +25,6 @@ You can bookmark this page in your browser so you can reference this handbook in
 And you can [download this handbook in PDF / ePUB / Mobi format for free](https://flaviocopes.com/page/linux-commands-handbook/).
 
 Enjoy!
-
 
 ## Introduction to Linux and shells
 
