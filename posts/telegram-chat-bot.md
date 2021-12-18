@@ -1,5 +1,5 @@
 ---
-title: "Telegram Chat-Bot"
+title: "Telegram Chat Bot"
 date: "Sept 22 2021"
 desc: "Testing the baisc post"
 type: "Project"

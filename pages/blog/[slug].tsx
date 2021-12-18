@@ -17,7 +17,7 @@ export default function PostPage({
           <img
             className="object-cover w-full h-64"
             src={cover_img}
-            alt="Article"
+            alt="Article - Image"
           />
 
           <div className="p-6">
@@ -26,9 +26,9 @@ export default function PostPage({
               <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
                 {type}
               </span>
-              {/* <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
+              <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
                 {title}
-              </span> */}
+              </span>
               <div className="prose lg:prose-l dark:text-white">
                 <div
                   className={styles.content}
