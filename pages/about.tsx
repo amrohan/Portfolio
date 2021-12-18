@@ -3,7 +3,7 @@ import Head from "next/head";
 import About from "./components/AboutPage";
 
 export default function about() {
-  var about = "About Page 🔥";
+  var about = "About Page 🔥 (amrohan)";
   return (
     <div className="w-screen h-screen dark:bg-gray-950 dark:text-white">
       <Head>

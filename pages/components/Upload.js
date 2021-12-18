@@ -77,7 +77,7 @@ function Upload() {
           >
             <div className="grid place-items-center w-full">
               <input className="hover:text-2xl" type="file" name="file" />
-              <img src={imageSrc} className="pt-6" />
+              <img src={imageSrc} alt="Next-Image" className="pt-6" />
             </div>
 
             {imageSrc && !uploadData && (

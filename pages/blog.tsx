@@ -7,7 +7,7 @@ import { sortByDate } from "../sort";
 import Link from "next/link";
 
 export default function blog({ posts }) {
-  var project = "Project Page 🔥";
+  var project = "Project && Page 🔥";
   return (
     <div className="md:absolute static h-full w-full dark:bg-gray-950 dark:text-white ">
       <Head>
