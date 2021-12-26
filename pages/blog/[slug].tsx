@@ -2,8 +2,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import styles from "../../styles/content.module.css";
 import Link from "next/link";
+import MarkdownWrapper from "../components/MarkdownWrapper";
 
 export default function PostPage({
   frontmatter: { title, date, cover_img, type },
@@ -12,7 +12,7 @@ export default function PostPage({
 }) {
   return (
     <>
-      <div className="bg-white text-black dark:text-gray-100 dark:bg-gray-950">
+      <div className="bg-slate-50 dark:bg-gray-950">
         <div className="pt-24 max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-hero-100">
           <img
             className="object-cover w-full h-64"
@@ -29,12 +29,11 @@ export default function PostPage({
               <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
                 {title}
               </span>
-              <div className="prose lg:prose-l dark:text-white">
+              <MarkdownWrapper>
                 <div
-                  className={styles.content}
                   dangerouslySetInnerHTML={{ __html: marked(content) }}
                 ></div>
-              </div>
+              </MarkdownWrapper>
             </div>
 
             <div className="mt-4">

@@ -49,4 +49,5 @@ As I previously stated, it is completely free and open source for you to modify 
 
 ## Contact Me
 
-✨ Please do not hesitate to contact me with any questions [Here](https://t.me/amrohan)
+> ✨ Please do not hesitate to contact me with any questions
+> [Here](https://t.me/amrohan)

@@ -1,7 +1,5 @@
-const siteUrl = "https://rohan.ml";
-
 module.exports = {
-  siteUrl,
+  siteUrl: process.env.SITE_URL || "https://rohan.ml",
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
@@ -10,5 +8,5 @@ module.exports = {
     ],
     // additionalSitemaps: [`${siteUrl}/sitemap.xml`],
   },
-  exclude: ["/up"],
+  exclude: ["/up", "/components"],
 };
