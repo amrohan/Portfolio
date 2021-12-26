@@ -6,8 +6,8 @@ export default function BlogPostCard({ title, slug, cover_img }) {
   return (
     <Link href={`/blog/${slug}`}>
       <a>
-        <article className="dark:bg-gray-940 dark:text-white relative rounded-lg group overflow-hidden shadow-lg ">
-          <div className="relative w-full h-80 md:h-64 lg:h-44">
+        <article className="dark:bg-gray-940 dark:text-white relative rounded-lg group overflow-hidden shadow-lg h-fit ">
+          <div className="relative w-full h-52 md:h-64 lg:h-44">
             <img
               src={cover_img}
               alt="Image Logo"

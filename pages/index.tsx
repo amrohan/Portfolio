@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   var homepage = "Homepage";
   return (
-    <div className="p-8 md:p-0 w-screen h-full pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
+    <div className="p-8 md:p-0 w-full h-full pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
       <Head>
         <title>Rohan Salunkhe | {homepage} </title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,7 +19,7 @@ export default function Home() {
               Rohan Salunkhe
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-              Fullstack Developer
+              Developer
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
               {
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <div className="w-[80px] sm:w-[176px] mb-8 sm:mb-0 mr-auto">
             <img
-              alt="Lee Robinson"
+              alt="Rohan Salunkhe"
               height={176}
               width={176}
               src="/avatar.jpg"
@@ -37,29 +37,30 @@ export default function Home() {
             />
           </div>
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-          Featured Projects
+        <h3 className="font-bold text-2xl md:text34xl tracking-tight mb-6 text-black dark:text-white underline decoration-indigo-500">
+          Featured{" "} 
+          <span className="underline decoration-pink-500">Projects</span>
         </h3>
-        <section className=" grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8 place-content-center ">
+        <section className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8 place-content-center group ">
           <BlogPostCard
             title="A Telegram Bot"
             slug="telegram-chat-bot"
-            cover_img="https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            cover_img="https://res.cloudinary.com/amrohan/image/upload/v1640526258/Images/wt0kadwcbuo6rpx72a5u.jpg"
           />
           <BlogPostCard
-            title="A LinkTree Porject"
+            title="A Link Tree Porject"
             slug="a-linktree-alternative"
-            cover_img="https://images.unsplash.com/photo-1513118172236-00b7cc57e1fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHNvY2lhbCUyMGxpbmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            cover_img="http://res.cloudinary.com/amrohan/image/upload/v1640527918/Images/hbl8sq97kzzk4bschq1t.jpg"
           />
         </section>
         <Link href="/blog">
-          <a className="h-6 flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all">
+          <a className=" h-7 flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all">
             Read all posts
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              className="h-6 w-6 ml-1"
+              className="h-8 w-6 ml-2 text-pink-500"
             >
               <path
                 stroke="currentColor"

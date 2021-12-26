@@ -3,8 +3,10 @@ title: "Telegram Chat Bot"
 date: "Sept 22 2021"
 desc: "Testing the baisc post"
 type: "Project"
-cover_img: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+cover_img: "https://res.cloudinary.com/amrohan/image/upload/v1640526258/Images/wt0kadwcbuo6rpx72a5u.jpg"
 ---
+
+# A Telegram Chat Bot
 
 A is a simple Telegram bot that responds to users automatically when they communicate with it.
 

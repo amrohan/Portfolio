@@ -3,7 +3,7 @@ title: "Spotify Embedded Player"
 date: "Aug 26 2021"
 desc: "Testinf the baisc post"
 type: "Project"
-cover_img: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80"
+cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640526522/Images/vko5excftcbxdrqwljir.jpg"
 ---
 
 # What is Spotify-Api player?

@@ -3,7 +3,7 @@ title: "Chat App using Nextjs"
 date: " Aug 12 2021"
 desc: "Testing the baisc post"
 type: "Project"
-cover_img: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNoYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640526955/Images/fpjrbdyezijnsw0mn6ex.jpg"
 ---
 
 # Chat-Hub
@@ -41,7 +41,7 @@ Website Link 👉 [Click Me](https://chat-hub.rohan.ml)
 4. Create an.env file in the root directory and add your firebase config tokens there, or hard code it in firebase. initializeApp <br/>
    _NOTE :&nbsp; In the assign variable, put your firebase key values._
 
-   ```
+   ```txt
    REACT_APP_apiKey = apiKey
    REACT_APP_authDomain = authDomain
    REACT_APP_projectId = projectId
@@ -54,17 +54,15 @@ Website Link 👉 [Click Me](https://chat-hub.rohan.ml)
 5. Create a firebase web app and a firebase store database, then paste the firebase config token into [`firebase-chat/src/App.js`](src/App.js#L12)
 
    ```js
-
    firebase.initializeApp({
-   apiKey: "process.env.apiKey",
-   authDomain: "process.env.authDomain",
-   projectId: "process.env.projectId",
-   storageBucket:"process.env.storageBucket",
-   messagingSenderId:"process.env.messagingSenderId",
-   appId:"process.env.appId",
-   measurementId: "process.env.measurementId"
-   })
-   }
+     apiKey: "process.env.apiKey",
+     authDomain: "process.env.authDomain",
+     projectId: "process.env.projectId",
+     storageBucket: "process.env.storageBucket",
+     messagingSenderId: "process.env.messagingSenderId",
+     appId: "process.env.appId",
+     measurementId: "process.env.measurementId",
+   });
    ```
 
 6. Deploy it on any of your favourite website hosting services.

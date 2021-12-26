@@ -13,7 +13,7 @@ export default function PostPage({
   return (
     <>
       <div className="bg-slate-50 dark:bg-gray-950">
-        <div className="pt-24 max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-hero-100">
+        <div className="pt-24 max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-950">
           <img
             className="object-cover w-full h-64"
             src={cover_img}
@@ -23,12 +23,12 @@ export default function PostPage({
           <div className="p-6">
             {/* Using here to make it available in dark and light mode */}
             <div className="dark:text-white text-black">
-              <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
+              <span className="text-xs font-medium text-pink-600 uppercase dark:text-pink-500">
                 {type}
               </span>
-              <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
+              {/* <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
                 {title}
-              </span>
+              </span> */}
               <MarkdownWrapper>
                 <div
                   dangerouslySetInnerHTML={{ __html: marked(content) }}

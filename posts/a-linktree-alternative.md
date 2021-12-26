@@ -3,7 +3,7 @@ title: "Linktree Project"
 date: "Aug 26 2021"
 desc: "Testing the baisc post"
 type: "Project"
-cover_img: "https://images.unsplash.com/photo-1513118172236-00b7cc57e1fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHNvY2lhbCUyMGxpbmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640527918/Images/hbl8sq97kzzk4bschq1t.jpg"
 ---
 
 # Link Tree Alternative

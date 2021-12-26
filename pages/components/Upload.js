@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import styles from "../../styles/content.module.css";
 
 function Upload() {
   const [imageSrc, setImageSrc] = useState();
@@ -59,7 +58,7 @@ function Upload() {
   return (
     <div className="w-screen text-bold pt-32 dark:bg-gray-950 dark:text-white overflow-hidden">
       <div className="grid place-items-center mr-auto ml-auto">
-        <main className={styles.content}>
+        <main className="prose prose-slate">
           <div className="text-centerleading-10">
             <h1
               id="up"
@@ -97,14 +96,14 @@ function Upload() {
                     </span>
                   </span>
 
-                  {/* <pre className="text-blue-300 md:w-full">
+                  <pre className="text-blue-300 md:w-full">
                     {JSON.stringify(uploadData, null, 2)}
-                  </pre> */}
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+                  </pre>
+                  {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
                     <a href={uploadData} className="dark:text-white">
                       Check Image
                     </a>
-                  </button>
+                  </button> */}
                 </code>
               </div>
             )}
