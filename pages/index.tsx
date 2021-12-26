@@ -22,9 +22,9 @@ export default function Home() {
               Fullstack Developer
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              It's an honor for me to share my passions, stories, and abilities
-              with you. Below is a sampling of the many things I've
-              accomplished.
+              {
+                "It's an honor for me to share my passions, stories, and abilities with you. Below is a sampling of the many things I've accomplished. "
+              }
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] mb-8 sm:mb-0 mr-auto">
