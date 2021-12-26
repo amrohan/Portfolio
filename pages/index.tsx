@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   var homepage = "Homepage";
   return (
-    <div className="p-8 md:p-0 w-full h-full pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
+    <div className="p-8 w-full h-full pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
       <Head>
         <title>Rohan Salunkhe | {homepage} </title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,7 +15,7 @@ export default function Home() {
       <div className=" h-full flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row items-start">
           <div className="flex flex-col md:pr-8">
-            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-yellow-800">
+            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 ">
               Rohan Salunkhe
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">Developer</h2>
@@ -39,7 +39,7 @@ export default function Home() {
           Featured{" "}
           <span className="underline decoration-pink-500">Projects</span>
         </h3>
-        <section className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+        <section className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
           <BlogPostCard
             title="A Telegram Bot"
             slug="telegram-chat-bot"
