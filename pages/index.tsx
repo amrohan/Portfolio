@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Rohan Salunkhe | {homepage} </title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="" />
+        <meta name="description" content="rohan salunkhe personal website || amrohan" />
       </Head>
       <div className=" h-full flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row items-start">
