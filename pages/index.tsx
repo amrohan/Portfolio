@@ -1,5 +1,5 @@
 import Head from "next/head";
-import BlogPostCard from "./components/BlogPostCard";
+import BlogPostCard from "../components/BlogPostCard";
 // import Image from "next/image";
 import Link from "next/link";
 
@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="p-8 w-full h-full pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
       <Head>
-        <title>Rohan Salunkhe | {homepage} </title>
+        <title>Rohan Salunkhe - amrohan | {homepage} </title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="rohan salunkhe personal website || amrohan" />
+        <meta name="description" content="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode." />
       </Head>
       <div className=" h-full flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row items-start">

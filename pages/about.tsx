@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import About from "./components/AboutPage";
+import About from "../components/AboutPage";
 
 export default function about() {
   var about = "About Page 🔥 (amrohan)";

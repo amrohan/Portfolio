@@ -3,7 +3,8 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import Link from "next/link";
-import MarkdownWrapper from "../components/MarkdownWrapper";
+import MarkdownWrapper from "../../components/MarkdownWrapper";
+import Head from "next/head";
 
 export default function PostPage({
   frontmatter: { title, date, cover_img, type },
@@ -13,6 +14,16 @@ export default function PostPage({
   return (
     <>
       <div className="bg-slate-50 dark:bg-gray-950">
+      <Head>
+        <title>Rohan Salunkhe - amrohan Blog | {title} </title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
+        />
+
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
         <div className="pt-24 max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-950">
           <img
             className="object-cover w-full h-64"

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Upload from "./components/Upload";
+import Upload from "../components/Upload";
 
 export default function up() {
   return (

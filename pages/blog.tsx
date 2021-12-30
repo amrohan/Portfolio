@@ -7,11 +7,17 @@ import { sortByDate } from "../sort";
 import Link from "next/link";
 
 export default function blog({ posts }) {
-  var project = "Project && Page 🔥";
+  var blog = "Project && Blog Page 🔥";
   return (
     <div className="md:absolute static h-full w-full dark:bg-gray-950 dark:text-white ">
       <Head>
-        <title>Rohan Salunkhe | {project}</title>
+        <title>Rohan Salunkhe - amrohan | {blog} </title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
+        />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
