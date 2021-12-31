@@ -1,9 +1,9 @@
 ---
 title: "Telegram Chat Bot"
 date: "Sept 22 2021"
-desc: "Testing the baisc post"
+desc: "A is a simple Telegram bot that automatically reacts to users that contact with it. It is written in Python and hosted on Heroku."
 type: "Project"
-cover_img: "https://res.cloudinary.com/amrohan/image/upload/v1640526258/Images/wt0kadwcbuo6rpx72a5u.jpg"
+cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640965535/Images/ndqykr9gey99qasjhjwt.jpg"
 ---
 
 # A Telegram Chat Bot

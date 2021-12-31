@@ -1,9 +1,9 @@
 ---
 title: "Chat App using Nextjs"
 date: " Aug 12 2021"
-desc: "Testing the baisc post"
+desc: "Chathub is a gruoup chat app made by amrohan aka rohan salunkhe using firabse and next js."
 type: "Project"
-cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640526955/Images/fpjrbdyezijnsw0mn6ex.jpg"
+cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640966009/Images/luqtkuioib1slbbwgak4.jpg"
 ---
 
 # Chat-Hub
@@ -64,6 +64,7 @@ Website Link 👉 [Click Me](https://chat-hub.rohan.ml)
      measurementId: "process.env.measurementId",
    });
    ```
+
 6. Deploy it on any of your favourite website hosting services.
    1. [Netlify](https://netlify.com)
    2. [Vercel](https://vercel.com)

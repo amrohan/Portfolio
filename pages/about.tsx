@@ -1,15 +1,12 @@
 import React from "react";
-import Head from "next/head";
+import MetaTags from "../components/MetaTags";
 import About from "../components/AboutPage";
 
 export default function about() {
-  var about = "About Page 🔥 (amrohan)";
+ 
   return (
     <div className="w-screen h-screen dark:bg-gray-950 dark:text-white">
-      <Head>
-        <title>Rohan Salunkhe | {about}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+     <MetaTags title="About Page | Amrohan" description="Rohan salunkhe - amrohan's personal page, which includes information about his education and career as well as his interests." image="/avtar.jpg" />
       <About />
     </div>
   );
