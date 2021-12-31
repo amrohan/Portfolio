@@ -57,13 +57,9 @@ export default function PostPage({
                           children={String(children).replace(/\n$/, "")}
                           style={coldarkDark}
                           language={match[1]}
-                          PreTag="div"
-                          {...props}
                         />
                       ) : (
-                        <code className={className} {...props}>
-                          {children}
-                        </code>
+                        <code className={className}>{children}</code>
                       );
                     },
                   }}
