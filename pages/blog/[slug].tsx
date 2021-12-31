@@ -60,7 +60,7 @@ export default function PostPage({
                           PreTag="div"
                           {...props}
                         >
-                          {children}
+                          {String(children).replace(/\n$/, "")}
                         </SyntaxHighlighter>
                       ) : (
                         <code className={className} {...props}>
