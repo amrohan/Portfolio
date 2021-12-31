@@ -1,7 +1,7 @@
 ---
 title: "Spotify Embedded Player"
 date: "Aug 26 2021"
-desc: "Testinf the baisc post"
+desc: "A Spotify-Api player is a music player that you can put in your github profile to make it appear 10 times better"
 type: "Project"
 cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640526522/Images/vko5excftcbxdrqwljir.jpg"
 ---
@@ -32,7 +32,7 @@ Fork the repo from my github [click me](https://github.com/amrohan/Spotify-Api)
 
 - Navigate to the following URL:
 
-```
+```http
 https://accounts.spotify.com/authorize?client_id={SPOTIFY_CLIENT_ID}&response_type=code&scope=user-read-currently-playing,user-read-recently-played&redirect_uri=http://localhost/callback/
 ```
 
@@ -42,7 +42,7 @@ https://accounts.spotify.com/authorize?client_id={SPOTIFY_CLIENT_ID}&response_ty
 
 - Then run a [curl command](https://httpie.org/run) in the form of:
 
-```sh
+```bash
 curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Basic {BASE64}" -d "grant_type=authorization_code&redirect_uri=http://localhost/callback/&code={CODE}" https://accounts.spotify.com/api/token
 ```
 
@@ -56,8 +56,8 @@ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Authorizat
 
 - Add Environment Variables:
 
-```
- https://vercel.com/<YourName>/<ProjectName>/settings/environment-variables
+```http
+ https://vercel.com/<YourName>/<ProjectName>/settings/environment-variables/
 ```
 
     - `SPOTIFY_REFRESH_TOKEN`

@@ -1,16 +1,16 @@
 ---
-title: "Linktree Project"
+title: "Link Hub Project"
 date: "Aug 26 2021"
-desc: "Testing the baisc post"
+desc: "LinkHub is an open source alternative to Linktree that allows you to store all of your social links in one location."
 type: "Project"
 cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640527918/Images/hbl8sq97kzzk4bschq1t.jpg"
 ---
 
 # Link Tree Alternative
 
-## What is linktree ?
+## What is linkHub ?
 
-Linktree works by creating a landing page on their site, which features multiple links to your site. You simply copy and paste your Linktree landing page URL into your Instagram bio to raise awareness of other parts of your site.
+LinkHub works by creating a landing page on their site, which features multiple links to your site. You simply copy and paste your Linktree landing page URL into your Instagram bio to raise awareness of other parts of your site.
 
 ### Why should you make your own LinkTree, though?
 

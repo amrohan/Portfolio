@@ -1,4 +1,4 @@
-import Head from "next/head";
+import MetaTags from "../components/MetaTags";
 import BlogPostCard from "../components/BlogPostCard";
 // import Image from "next/image";
 import Link from "next/link";
@@ -7,11 +7,12 @@ export default function Home() {
   var homepage = "Homepage";
   return (
     <div className="p-8 w-full h-full pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
-      <Head>
-        <title>Rohan Salunkhe - amrohan | {homepage} </title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode." />
-      </Head>
+      {/* Adding Meta tags Here */}
+      <MetaTags
+        title="Rohan Salunkhe - amrohan personal website"
+        description="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
+        image="/avtar.jpg"
+      />
       <div className=" h-full flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row items-start">
           <div className="flex flex-col md:pr-8">
@@ -43,7 +44,7 @@ export default function Home() {
           <BlogPostCard
             title="A Telegram Bot"
             slug="telegram-chat-bot"
-            cover_img="https://res.cloudinary.com/amrohan/image/upload/v1640526258/Images/wt0kadwcbuo6rpx72a5u.jpg"
+            cover_img="http://res.cloudinary.com/amrohan/image/upload/v1640965535/Images/ndqykr9gey99qasjhjwt.jpg"
           />
           <BlogPostCard
             title="A Link Tree Porject"

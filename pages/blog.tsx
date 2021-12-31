@@ -1,30 +1,25 @@
 import React from "react";
-import Head from "next/head";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "../sort";
 import Link from "next/link";
+import MetaTags from "../components/MetaTags";
 
 export default function blog({ posts }) {
-  var blog = "Project && Blog Page 🔥";
   return (
     <div className="md:absolute static h-full w-full dark:bg-gray-950 dark:text-white ">
-      <Head>
-        <title>Rohan Salunkhe - amrohan | {blog} </title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      {/* Adding meta  */}
+      <MetaTags
+        title="Project | Blog Page 🔥- amrohan"
+        description="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
+        image="/avtar.jpg"
+      />
 
       <div className="w-full h-full dark:bg-gray-950 dark:text-white">
         <section className="absoulute mt-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 dark:bg-gray-950 dark:text-white text-center">
           <article className="pt-32">
-            <h2 className="text-6xl mb-10 font-extrabold text-rose-600 ">
+            <h2 className="text-6xl mb-10 font-extrabold text-rose-300 ">
               Blog
             </h2>
             {/* CARD 1 */}
