@@ -45,25 +45,33 @@ export default function PostPage({
                 {title}
               </span> */}
               <MarkdownWrapper>
+                {/* Passing markdown content into ReactMarkdown component */}
+
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
                   rehypePlugins={[rehypeRaw]}
-                  children={content}
                   components={{
                     code({ node, inline, className, children, ...props }) {
                       const match = /language-(\w+)/.exec(className || "");
                       return !inline && match ? (
                         <SyntaxHighlighter
-                          children={String(children).replace(/\n$/, "")}
                           style={coldarkDark}
                           language={match[1]}
-                        />
+                          PreTag="div"
+                          {...props}
+                        >
+                          {children}
+                        </SyntaxHighlighter>
                       ) : (
-                        <code className={className}>{children}</code>
+                        <code className={className} {...props}>
+                          {children}
+                        </code>
                       );
                     },
                   }}
-                />
+                >
+                  {content}
+                </ReactMarkdown>
               </MarkdownWrapper>
             </div>
 
