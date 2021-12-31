@@ -24,7 +24,7 @@ export default function blog({ posts }) {
       <div className="w-full h-full dark:bg-gray-950 dark:text-white">
         <section className="absoulute mt-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 dark:bg-gray-950 dark:text-white text-center">
           <article className="pt-32">
-            <h2 className="text-6xl mb-10 font-extrabold text-rose-600 ">
+            <h2 className="text-6xl mb-10 font-extrabold text-rose-300 " >
               Blog
             </h2>
             {/* CARD 1 */}
