@@ -1,10 +1,14 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { marked } from "marked";
 import Link from "next/link";
 import MarkdownWrapper from "../../components/MarkdownWrapper";
 import Head from "next/head";
+import ReactMarkdown from "react-markdown";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coldarkDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 export default function PostPage({
   frontmatter: { title, date, cover_img, type },
@@ -14,16 +18,16 @@ export default function PostPage({
   return (
     <>
       <div className="bg-slate-50 dark:bg-gray-950">
-      <Head>
-        <title>Rohan Salunkhe - amrohan Blog | {title} </title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
-        />
+        <Head>
+          <title>Rohan Salunkhe - amrohan Blog | {title} </title>
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="description"
+            content="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
+          />
 
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <div className="pt-24 max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-950">
           <img
             className="object-cover w-full h-64"
@@ -41,9 +45,29 @@ export default function PostPage({
                 {title}
               </span> */}
               <MarkdownWrapper>
-                <div
-                  dangerouslySetInnerHTML={{ __html: marked(content) }}
-                ></div>
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  rehypePlugins={[rehypeRaw]}
+                  children={content}
+                  components={{
+                    code({ node, inline, className, children, ...props }) {
+                      const match = /language-(\w+)/.exec(className || "");
+                      return !inline && match ? (
+                        <SyntaxHighlighter
+                          children={String(children).replace(/\n$/, "")}
+                          style={coldarkDark}
+                          language={match[1]}
+                          PreTag="div"
+                          {...props}
+                        />
+                      ) : (
+                        <code className={className} {...props}>
+                          {children}
+                        </code>
+                      );
+                    },
+                  }}
+                />
               </MarkdownWrapper>
             </div>
 
