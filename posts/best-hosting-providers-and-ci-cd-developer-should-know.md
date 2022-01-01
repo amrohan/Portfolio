@@ -50,7 +50,7 @@ Try : [Vercel](https://vercel.com/)
 
 3 . Netlify
 
-![Netlify Image ](http://res.cloudinary.com/amrohan/image/upload/v1641012809/Images/nnzbdplbjm9c1qvr22j0.png)
+![Netlify Image ](https://res.cloudinary.com/amrohan/image/upload/v1641012809/Images/nnzbdplbjm9c1qvr22j0.png)
 
 Netlify is similar to Vercel, but it has its own edge network, which drastically reduces the time it takes for your site to load.
 
@@ -68,7 +68,7 @@ Try : [Vercel](https://www.netlify.com/)
 
 4 . Github Pages
 
-![GitHub Pages ](http://res.cloudinary.com/amrohan/image/upload/v1641013509/Images/vf1dc7dswwei2z4wkjkh.png)
+![GitHub Pages ](https://res.cloudinary.com/amrohan/image/upload/v1641013509/Images/vf1dc7dswwei2z4wkjkh.png)
 
 The granddaddy of static site hosting is GitHub Pages. And, come to think of it, it was the very first static site host I tested! I had no idea what was going on or what I was doing. I just went to GitHub Pages and launched the website.
 
@@ -83,7 +83,7 @@ Try : [Github Pages](https://pages.github.com/)
 
 5 . Giltab Pages
 
-![Gitlab Pages Image ](http://res.cloudinary.com/amrohan/image/upload/v1641013846/Images/ls8repmibjtccandbil9.jpg)
+![Gitlab Pages Image ](https://res.cloudinary.com/amrohan/image/upload/v1641013846/Images/ls8repmibjtccandbil9.jpg)
 
 Gitlab Pages is similar to Gitgub, but it offers private repository hosting, which Github does not.
 
@@ -96,7 +96,7 @@ Try : [Gitlab Pages](https://gitlab.com/)
 
 6 . Render
 
-![](http://res.cloudinary.com/amrohan/image/upload/v1641014682/Images/ez9ms4kxd4sqhiftd6yw.png)
+![](https://res.cloudinary.com/amrohan/image/upload/v1641014682/Images/ez9ms4kxd4sqhiftd6yw.png)
 
 Render is a unified cloud where you can develop and host all of your apps and websites. It comes with free TLS certificates, a worldwide CDN, DDoS protection, private networks, and auto deploys from git.
 
@@ -110,7 +110,7 @@ Try : [Render](https://render.com/)
 
 7 . Firebase
 
-![Firebase image ](http://res.cloudinary.com/amrohan/image/upload/v1641016717/Images/zpm4pvl4aasu6tifiwxt.jpg)
+![Firebase image ](https://res.cloudinary.com/amrohan/image/upload/v1641016717/Images/zpm4pvl4aasu6tifiwxt.jpg)
 
 Firebase is one of the quickest web hosting providers, and they use **fastly** as their CDN under the hood.
 Firebase not only hosts websites, but also offers data storage, user authentication, Google analytics, and more.
@@ -127,7 +127,7 @@ Try : [Firebase](https://firebase.google.com/)
 
 8 . Surge
 
-![surge website](http://res.cloudinary.com/amrohan/image/upload/v1641014468/Images/lhlmdjashdqu3mcpibfb.png)
+![surge website](https://res.cloudinary.com/amrohan/image/upload/v1641014468/Images/lhlmdjashdqu3mcpibfb.png)
 
 Surge is a one-command web publishing system. Without leaving the command line, publish HTML, CSS, and JS for free.
 
