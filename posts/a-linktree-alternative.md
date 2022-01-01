@@ -22,8 +22,6 @@ LinkHub works by creating a landing page on their site, which features multiple 
 
 [Live Demo](https://amrohan.ml)
 
-![Screenshot](/Images/linktree.webp)
-
 Before we begin, you should be familiar with the fundamentals of HTML and CSS.
 
 ### So question is how you do it?

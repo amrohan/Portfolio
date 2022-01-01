@@ -11,7 +11,7 @@ export default function Home() {
       <MetaTags
         title="Rohan Salunkhe - amrohan personal website"
         description="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
-        image="/avtar.jpg"
+        image="/web-banner.png"
       />
       <div className=" h-full flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row items-start">

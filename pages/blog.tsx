@@ -8,12 +8,12 @@ import MetaTags from "../components/MetaTags";
 
 export default function blog({ posts }) {
   return (
-    <div className="md:absolute static h-full w-full dark:bg-gray-950 dark:text-white ">
+    <div className=" h-full w-full dark:bg-gray-950 dark:text-white ">
       {/* Adding meta  */}
       <MetaTags
         title="Project | Blog Page 🔥- amrohan"
         description="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
-        image="/avtar.jpg"
+        image="/web-banner.png"
       />
 
       <div className="w-full h-full dark:bg-gray-950 dark:text-white">

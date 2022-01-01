@@ -14,10 +14,6 @@ Chat-Hub is a free open source chat room built with React Js with Firebase as th
 
 Website Link 👉 [Click Me](https://chat-hub.rohan.ml)
 
-### Screenshots :
-
-![Chat hub screenshot](/Images/chathub.webp)
-
 #### Installation :
 
 1. Run this on local machine ?

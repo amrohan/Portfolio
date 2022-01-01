@@ -14,8 +14,6 @@ A is a simple Telegram bot that responds to users automatically when they commun
 
 Test the bot here 👉 [Chat-Bot](https://t.me/amrohanbot)
 
-![Chat Bot Image](/Images/chatbot.webp)
-
 ## Create Bot
 
 The first thing you need to do is tell Telegram that you want to create a bot. For this, you’ll need a Telegram account – install their app on your phone, and get it set up.

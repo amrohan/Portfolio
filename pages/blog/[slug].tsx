@@ -22,7 +22,7 @@ export default function PostPage({
       <div className="bg-slate-50 dark:bg-gray-950">
         <div className="pt-24 max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-950">
           <img
-            className="object-cover w-full h-64"
+            className="object-cover w-full rounded-xl h-64"
             src={cover_img}
             alt="Article - Image"
           />
@@ -49,7 +49,6 @@ export default function PostPage({
                         <SyntaxHighlighter
                           style={coldarkDark}
                           language={match[1]}
-                          PreTag="div"
                           {...props}
                         >
                           {String(children).replace(/\n$/, "")}
