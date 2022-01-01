@@ -3,7 +3,7 @@ title: "Spotify Embedded Player"
 date: "Aug 26 2021"
 desc: "A Spotify-Api player is a music player that you can put in your github profile to make it appear 10 times better"
 type: "Project"
-cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640526522/Images/vko5excftcbxdrqwljir.jpg"
+cover_img: "/Blog/spotify.jpg"
 ---
 
 # What is Spotify-Api player?

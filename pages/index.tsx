@@ -1,12 +1,11 @@
 import MetaTags from "../components/MetaTags";
 import BlogPostCard from "../components/BlogPostCard";
-// import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   var homepage = "Homepage";
   return (
-    <div className="p-8 w-full h-full pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
+    <div className="p-8 w-full h-full lg:h-screen pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
       {/* Adding Meta tags Here */}
       <MetaTags
         title="Rohan Salunkhe - amrohan personal website"
@@ -41,15 +40,10 @@ export default function Home() {
           <span className="underline decoration-pink-500">Projects</span>
         </h3>
         <section className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
-          <BlogPostCard
-            title="A Telegram Bot"
-            slug="telegram-chat-bot"
-            cover_img="http://res.cloudinary.com/amrohan/image/upload/v1640965535/Images/ndqykr9gey99qasjhjwt.jpg"
-          />
+          <BlogPostCard title="A Telegram Bot" slug="telegram-chat-bot" />
           <BlogPostCard
             title="A Link Tree Porject"
             slug="a-linktree-alternative"
-            cover_img="http://res.cloudinary.com/amrohan/image/upload/v1640527918/Images/hbl8sq97kzzk4bschq1t.jpg"
           />
         </section>
         <Link href="/blog">

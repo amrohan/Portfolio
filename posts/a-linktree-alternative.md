@@ -3,7 +3,7 @@ title: "Link Hub Project"
 date: "Aug 26 2021"
 desc: "LinkHub is an open source alternative to Linktree that allows you to store all of your social links in one location."
 type: "Project"
-cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640527918/Images/hbl8sq97kzzk4bschq1t.jpg"
+cover_img: "/Blog/linktr.jpg"
 ---
 
 # Link Tree Alternative

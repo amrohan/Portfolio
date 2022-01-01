@@ -3,7 +3,7 @@ title: "Chat App using Nextjs"
 date: " Aug 12 2021"
 desc: "Chathub is a gruoup chat app made by amrohan aka rohan salunkhe using firabse and next js."
 type: "Project"
-cover_img: "http://res.cloudinary.com/amrohan/image/upload/v1640966009/Images/luqtkuioib1slbbwgak4.jpg"
+cover_img: "/Blog/chathub.jpg"
 ---
 
 # Chat-Hub
