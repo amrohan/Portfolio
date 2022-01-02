@@ -1,11 +1,12 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react";
+import Head from "next/head";
+import { NextSeo } from "next-seo";
 
-export default function MetaTags({title,description,image}) {
-    return (
-        <div>
-            <Head>
-                <title>{title}</title>
+export default function MetaTags({ title, description, image }) {
+  return (
+    <div>
+      {/* <Head>
+                 <title>{title}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content={description} />
 
@@ -27,8 +28,31 @@ export default function MetaTags({title,description,image}) {
                 <meta name="twitter:image:alt" content={title} />
                 <meta name="twitter:site" content="https://amrohan.com/"/>
                 <meta name="twitter:creator" content="@rohansalunkhe_" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-        </div>
-    )
+                <link rel="icon" href="/favicon.ico" /> 
+            </Head> */}
+      <NextSeo
+        title={title}
+        description={description}
+        openGraph={{
+          url: "https://amrohan.com",
+          title: title,
+          description: description,
+          images: [
+            {
+              url: image,
+              width: 1200,
+              height: 630,
+              alt: title,
+            },
+          ],
+          site_name: title,
+        }}
+        twitter={{
+          handle: "@rohansalunkhe_",
+          site: "https://amrohan.com/",
+          cardType: "summary_large_image",
+        }}
+      />
+    </div>
+  );
 }
