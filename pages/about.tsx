@@ -8,7 +8,7 @@ export default function about() {
       <MetaTags
         title="About Page | Amrohan"
         description="Rohan salunkhe - amrohan's personal page, which includes information about his education and career as well as his interests."
-        image="http://res.cloudinary.com/amrohan/image/upload/v1641026544/Images/e1ffa8bll07ebpal4esa.png"
+        image="/web-banner.png"
       />
       <About />
     </div>
