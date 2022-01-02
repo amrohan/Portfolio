@@ -43,13 +43,13 @@ The steps to execute this on your local machine are as follows:
 
 1. Clone the given repo :
 
-```
+```bash
   git clone https://github.com/amrohan/ChatBot
 ```
 
 2. After that install requirement.txt
 
-```
+```bash
 pip install -r requirement.txt
 ```
 
@@ -57,17 +57,19 @@ OR
 
 You can manually install packages by using the commands listed below.
 
-`pip install python-telegram-bot`
+```bash
+pip install python-telegram-bot
+```
 
 Because with dot env installed, we can save and import our telegram bot api key.
 
-```
+```bash
 pip install python-dotenv
 ```
 
 Create .env file in the root folder of your cloned GitHub repo and add your botfather telegram bot token.
 
-```
+```txt
 API_KEY = {Telegram Bot Token}
 ```
 

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   var homepage = "Homepage";
   return (
-    <div className="p-8 w-full h-full lg:h-screen pt-28 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
+    <div className="p-8 w-full h-full lg:h-screen pt-24 md:pt-36 dark:bg-gray-950 dark:text-white overflow-hidden">
       {/* Adding Meta tags Here */}
       <MetaTags
         title="Rohan Salunkhe - amrohan personal website"
@@ -19,13 +19,13 @@ export default function Home() {
               Rohan Salunkhe
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">Developer</h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-16">
+            <p className="text-gray-600 dark:text-gray-400 mb-8 md:mb-16">
               {
                 "It's an honor for me to share my passions, stories, and abilities with you. Below is a sampling of the many things I've accomplished. "
               }
             </p>
           </div>
-          <div className="w-[80px] sm:w-[176px] mb-8 sm:mb-0 mr-auto">
+          <div className="w-[80px] sm:w-[176px] mb-2 md:mb-8 sm:mb-0 mr-auto">
             <img
               alt="Rohan Salunkhe"
               height={176}
@@ -39,7 +39,7 @@ export default function Home() {
           Featured{" "}
           <span className="underline decoration-pink-500">Projects</span>
         </h3>
-        <section className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+        <section className=" grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4">
           <BlogPostCard title="A Telegram Bot" slug="telegram-chat-bot" />
           <BlogPostCard
             title="A Link Tree Porject"
@@ -47,7 +47,7 @@ export default function Home() {
           />
         </section>
         <Link href="/blog">
-          <a className=" h-7 flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all">
+          <a className=" h-7 flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200">
             Read all posts
             <svg
               xmlns="http://www.w3.org/2000/svg"

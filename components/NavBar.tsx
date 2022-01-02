@@ -7,23 +7,8 @@ const NavBar = () => {
   const [show, setShow] = useState(false);
   return (
     <div className=" w-100% h-5 justify-center fixed inset-3 z-40">
-      <header className="p-2 bg-gray-50 dark:bg-gray-940 rounded-xl dark:text-gray-100 shadow-md w-auto">
-        <div className="container flex justify-between  h-12 mx-auto">
-          <Link href="/">
-            <a aria-label="Back to homepage" className="flex items-center p-2">
-              <svg
-                className="fill-current"
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              >
-                <path d="M11.954 11c3.33 0 7.057 6.123 7.632 8.716.575 2.594-.996 4.729-3.484 4.112-1.092-.271-3.252-1.307-4.102-1.291-.925.016-2.379.836-3.587 1.252-2.657.916-4.717-1.283-4.01-4.073.774-3.051 4.48-8.716 7.551-8.716zm10.793-4.39c1.188.539 1.629 2.82.894 5.27-.704 2.341-2.33 3.806-4.556 2.796-1.931-.877-2.158-3.178-.894-5.27 1.274-2.107 3.367-3.336 4.556-2.796zm-21.968.706c-1.044.729-1.06 2.996.082 5.215 1.092 2.12 2.913 3.236 4.868 1.87 1.696-1.185 1.504-3.433-.082-5.215-1.596-1.793-3.824-2.599-4.868-1.87zm15.643-7.292c1.323.251 2.321 2.428 2.182 5.062-.134 2.517-1.405 4.382-3.882 3.912-2.149-.407-2.938-2.657-2.181-5.061.761-2.421 2.559-4.164 3.881-3.913zm-10.295.058c-1.268.451-1.92 2.756-1.377 5.337.519 2.467 2.062 4.114 4.437 3.269 2.06-.732 2.494-3.077 1.377-5.336-1.125-2.276-3.169-3.721-4.437-3.27z" />
-              </svg>
-            </a>
-          </Link>
-
+      <header className="p-2 bg-transparent rounded-xl dark:text-gray-100 w-auto">
+        <div className="container flex justify-end  h-12 mx-auto">
           {/* For DeskTop  */}
           <ul className="items-stretch hidden space-x-3 md:flex">
             <li className="flex">
@@ -129,21 +114,21 @@ const NavBar = () => {
           We are updating setShow  */}
           <ul className="mx-10" onClick={() => setShow((Toggle) => !Toggle)}>
             {/* Home */}
-            <li className="p-3 mb-2 rounded-full bg-red-100 hover:text-white hover:bg-pink-300 dark:bg-gray-930 dark:text-white dark:hover:text-black ">
-              <Link href="/">
+            <Link href="/">
+              <li className="cursor-pointer p-3 mb-2 rounded-full bg-red-100 hover:text-white hover:bg-pink-300 dark:bg-gray-930 dark:text-white dark:hover:text-black ">
                 <a>Home</a>
-              </Link>
-            </li>
+              </li>
+            </Link>
 
             {/* About  */}
-            <li className="p-3 mb-2 rounded-full bg-red-100 hover:text-white hover:bg-pink-300 dark:bg-gray-930 dark:text-white dark:hover:text-dark ">
-              <Link href="/about">
+            <Link href="/about">
+              <li className="cursor-pointer p-3 mb-2 rounded-full bg-red-100 hover:text-white hover:bg-pink-300 dark:bg-gray-930 dark:text-white dark:hover:text-dark ">
                 <a className="w-full">About</a>
-              </Link>
-            </li>
+              </li>
+            </Link>
 
             {/* Project */}
-            <li className="p-3 mb-2 rounded-full bg-red-100 hover:text-white hover:bg-pink-300 dark:bg-gray-930 dark:text-white dark:hover:text-dark ">
+            <li className="cursor-pointer p-3 mb-2 rounded-full bg-red-100 hover:text-white hover:bg-pink-300 dark:bg-gray-930 dark:text-white dark:hover:text-dark ">
               <Link href="/blog">
                 <a>Blog</a>
               </Link>
