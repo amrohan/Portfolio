@@ -24,7 +24,7 @@ export default function PostPage({
           <img
             className="object-cover w-full rounded-xl h-64"
             src={cover_img}
-            alt={title}
+            alt="Article - Image"
           />
 
           <div className="p-6">
