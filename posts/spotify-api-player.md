@@ -4,6 +4,7 @@ date: "Aug 26 2021"
 desc: "A Spotify-Api player is a music player that you can put in your github profile to make it appear 10 times better"
 type: "Project"
 cover_img: "/Blog/spotify.jpg"
+auther : "Rohan Salunkhe"
 ---
 
 # What is Spotify-Api player?
@@ -22,11 +23,11 @@ Fork the repo from my github [click me](https://github.com/amrohan/Spotify-Api)
 
 - Create a [Spotify Application](https://developer.spotify.com/dashboard/applications)
 - Take note of:
-  - `Client ID`
-  - `Client Secret`
+  - Client ID
+  - Client Secret
 - Click on **Edit Settings**
 - In **Redirect URIs**:
-  - Add `http://localhost/callback/`
+  - Add http://localhost/callback/
 
 ## Refresh Token
 
@@ -60,14 +61,16 @@ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Authorizat
  https://vercel.com/<YourName>/<ProjectName>/settings/environment-variables/
 ```
 
-    - `SPOTIFY_REFRESH_TOKEN`
-    - `SPOTIFY_CLIENT_ID`
-    - `SPOTIFY_SECRET_ID`
+    - SPOTIFY_REFRESH_TOKEN
+    - SPOTIFY_CLIENT_ID
+    - SPOTIFY_SECRET_ID
 
 - Deploy!
 
 #### How You Will Use?
 
-###### You can now use the following in your readme file:
+You can now use the following in your readme file:
 
-`[![Spotify](https://USER_NAME.vercel.app/api/spotify)](https://open.spotify.com/user/USER_NAME)`
+```txt
+[![Spotify](https://USER_NAME.vercel.app/api/spotify)](https://open.spotify.com/user/USER_NAME)
+```

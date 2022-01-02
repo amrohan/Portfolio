@@ -12,7 +12,7 @@ import rehypeRaw from "rehype-raw";
 import MetaTags from "../../components/MetaTags";
 
 export default function PostPage({
-  frontmatter: { title, date, cover_img, type, desc },
+  frontmatter: { title, date, cover_img, type, desc, auther },
   slug,
   content,
 }) {
@@ -24,7 +24,7 @@ export default function PostPage({
           <img
             className="object-cover w-full rounded-xl h-64"
             src={cover_img}
-            alt="Article - Image"
+            alt={title}
           />
 
           <div className="p-6">
@@ -70,17 +70,17 @@ export default function PostPage({
               <div className="flex items-center">
                 <div className="flex items-center">
                   <img
-                    className="object-cover h-10 rounded-full"
+                    className="object-cover h-8 rounded-full"
                     src="/Images/me.webp"
                     alt="Avatar"
                   />
                   <Link href="/about">
-                    <a className="mx-2 font-semibold text-gray-700 dark:text-gray-400">
-                      Rohan Salunkhe
+                    <a className="mx-2 font-semibold text-slate-600 dark:text-slate-100">
+                      {auther}
                     </a>
                   </Link>
                 </div>
-                <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                <span className="mx-1 text-xs text-gray-600 dark:text-slate-100">
                   {date}
                 </span>
               </div>

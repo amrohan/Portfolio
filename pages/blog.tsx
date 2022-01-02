@@ -13,7 +13,7 @@ export default function blog({ posts }) {
       <MetaTags
         title="Project | Blog Page 🔥- amrohan"
         description="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
-        image="http://res.cloudinary.com/amrohan/image/upload/v1641026544/Images/e1ffa8bll07ebpal4esa.png"
+        image="https://res.cloudinary.com/amrohan/image/upload/v1641026544/Images/e1ffa8bll07ebpal4esa.png"
       />
 
       <div className="w-full h-full dark:bg-gray-950 dark:text-white">
@@ -31,7 +31,7 @@ export default function blog({ posts }) {
                       <div className="relative w-full h-80 md:h-64 lg:h-44">
                         <img
                           src={post.frontmatter.cover_img}
-                          alt="Image Logo"
+                          alt={post.frontmatter.title}
                           className="w-full h-full object-center object-cover"
                         />
                       </div>

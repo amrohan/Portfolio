@@ -4,6 +4,7 @@ date: "Aug 26 2021"
 desc: "LinkHub is an open source alternative to Linktree that allows you to store all of your social links in one location."
 type: "Project"
 cover_img: "/Blog/linktr.jpg"
+auther : "Rohan Salunkhe"
 ---
 
 # Link Tree Alternative
