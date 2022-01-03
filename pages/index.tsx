@@ -23,7 +23,7 @@ export default function Home() {
           </p>
           <div className="flex mt-8">
             <Link href="/blog">
-              <a className="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-pink-500 text-pink-500 dark:text-white hover:bg-pink-500 hover:text-white text-md">
+              <a className="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-pink-500 text-black dark:text-white hover:bg-pink-500 hover:text-white text-md">
                 Read Blog
               </a>
             </Link>
