@@ -42,13 +42,17 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
-          <button className="flex justify-end p-3 md:hidden rounded-full">
+          <button
+            aria-label="Right Align"
+            className="flex justify-end p-3 md:hidden rounded-full"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
               className="w-6 h-6"
+              aria-hidden="true"
               onClick={() => setShow((Toggle) => !Toggle)}
             >
               <path
