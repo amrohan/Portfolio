@@ -6,7 +6,7 @@ const NavBar = () => {
   // Using UseState to pass true or false to toggle button
   const [show, setShow] = useState(false);
   return (
-    <div className="w-fill text-white mx-auto h-5 justify-center fixed inset-3">
+    <div className="w-fill dark:text-white mx-auto h-5 justify-center fixed inset-3">
       <header className="p-2 bg-transparent rounded-xl dark:text-gray-100  w-auto">
         <div className="flex justify-end md:justify-center  h-12 mx-auto">
           {/* For DeskTop  */}

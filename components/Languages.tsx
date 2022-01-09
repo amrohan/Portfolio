@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Languages() {
   return (
-    <section className="text-gray-400 bg-gray-950">
-      <h1 className="text-center dark:text-white text-2xl font-bold underline decoration-pink-500">
+    <section className="bg-slate-50 dark:bg-gray-950">
+      <h1 className="text-center dark:dark:text-white text-2xl font-bold underline decoration-pink-500">
         Languages I Know
       </h1>
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -13,7 +13,7 @@ export default function Languages() {
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center dark:text-white relative z-10">
                 <img
                   src="/python.png"
                   alt="python img"
@@ -22,10 +22,10 @@ export default function Languages() {
                 />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm dark:text-white mb-1 tracking-wider">
                   Python
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-slate-600">
                   I have python and{" "}
                   <span className="underline decoration-indigo-400">
                     MongoDb
@@ -38,14 +38,14 @@ export default function Languages() {
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center dark:text-white relative z-10">
                 <img src="/java.png" alt="java img" width={32} height={32} />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm dark:text-white mb-1 tracking-wider">
                   Java
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-slate-600">
                   Using java and android studio, I created an android
                   application.
                 </p>
@@ -55,7 +55,7 @@ export default function Languages() {
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center dark:text-white relative z-10">
                 <img
                   src="/c.png"
                   alt="C-Programming lang image"
@@ -64,10 +64,10 @@ export default function Languages() {
                 />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm dark:text-white mb-1 tracking-wider">
                   C
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-slate-600">
                   Used c to create a simple calculator.
                 </p>
               </div>
@@ -76,27 +76,27 @@ export default function Languages() {
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center dark:text-white relative z-10">
                 <img src="/c++.png" alt="c ++ image" width={32} height={32} />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-sm dark:text-white mb-1 tracking-wider">
                   C++
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-slate-600">
                   Used c++ to create a simple terminal game.
                 </p>
               </div>
             </div>
             <div className="flex relative">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center dark:text-white relative z-10">
                 <img src="/ar.webp" alt="arrow" width={32} height={32} />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-lg text-white mb-1 tracking-wider">
+                <h2 className="font-medium title-font text-lg dark:text-white mb-1 tracking-wider">
                   Frameworks
                 </h2>
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-slate-600">
                   {
                     "React and vue are frameworks that I am familiar with. Working with Next js, on the other hand, is a pleasure for me. I used next js to make my portfolio website."
                   }
