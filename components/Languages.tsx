@@ -14,7 +14,12 @@ export default function Languages() {
                 <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10">
-                <img src="/python.png" alt="" />
+                <img
+                  src="/python.png"
+                  alt="python img"
+                  width={32}
+                  height={32}
+                />
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
@@ -34,7 +39,7 @@ export default function Languages() {
                 <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full  inline-flex items-center justify-center text-white relative z-10">
-                <img src="/java.png" alt="" />
+                <img src="/java.png" alt="java img" width={32} height={32} />
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
@@ -51,7 +56,12 @@ export default function Languages() {
                 <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
-                <img src="/c.png" alt="C-Programming lang image" />
+                <img
+                  src="/c.png"
+                  alt="C-Programming lang image"
+                  width={32}
+                  height={32}
+                />
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
@@ -67,7 +77,7 @@ export default function Languages() {
                 <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
-                <img src="/cplus.png" alt="c ++ image" />
+                <img src="/c++.png" alt="c ++ image" width={32} height={32} />
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
@@ -80,7 +90,7 @@ export default function Languages() {
             </div>
             <div className="flex relative">
               <div className="flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10">
-                <img src="/ar.webp" alt="arrow" />
+                <img src="/ar.webp" alt="arrow" width={32} height={32} />
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-lg text-white mb-1 tracking-wider">
@@ -95,9 +105,11 @@ export default function Languages() {
             </div>
           </div>
           <img
-            className="lg:w-3/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
+            className="mx-auto lg:w-3/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
             src="/code.gif"
             alt="step"
+            width={260}
+            height={480}
           />
         </div>
       </div>
