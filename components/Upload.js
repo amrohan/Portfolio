@@ -64,7 +64,7 @@ function Upload() {
               id="up"
               className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-800"
             >
-              Upload Images
+              Upload Images Here
             </h1>
           </div>
 
