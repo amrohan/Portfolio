@@ -13,7 +13,11 @@ const NotFound = () => {
   }, []);
   return (
     <div className="bg-indigo-900 relative overflow-hidden h-screen">
-      <img src="/404.jpg" className="absolute h-full w-full object-cover" />
+      <img
+        src="/404.jpg"
+        className="absolute h-full w-full object-cover"
+        alt="404 page"
+      />
       <div className="inset-0 bg-black opacity-25 absolute"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
         <div className="w-full font-mono flex flex-col items-center relative z-10">
