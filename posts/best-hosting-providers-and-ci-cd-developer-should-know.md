@@ -4,8 +4,10 @@ date: " Jan 01 2022"
 desc: "This article contains all information regarding hosting services such as githubpages, cloudflare pages, netlify, vercel, and firebase."
 type: "Blog"
 cover_img: "/Blog/Hosting-Thumbnail.png"
-auther : "Rohan Salunkhe"
+auther: "Rohan Salunkhe"
 ---
+
+# Best hosting Providers
 
 As a web developer, we work on a lot of projects, and occasionally we want to share them with the rest of the world, which necessitates the use of hosting. So why should you pay when there are free choices available that provide CI/CD right out of the box.
 

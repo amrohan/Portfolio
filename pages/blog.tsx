@@ -19,30 +19,45 @@ export default function blog({ posts }) {
       <div className="w-full h-full dark:bg-gray-950 dark:text-white">
         <section className="absoulute mt-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 dark:bg-gray-950 dark:text-white text-center">
           <article className="pt-32">
-            <h2 className="text-6xl mb-10 font-extrabold text-rose-300 ">
-              Blog
+            <h2 className="text-6xl mb-10 font-extrabold text-pink-300 ">
+              BLOG
             </h2>
             {/* CARD 1 */}
             <section className="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 ">
               {posts.map((post, index) => (
-                <Link key={index} href={`/blog/${post.slug}`}>
-                  <a>
-                    <article className="dark:bg-gray-940  dark:text-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
-                      <div className="relative w-full h-80 md:h-64 lg:h-44">
-                        <img
-                          src={post.frontmatter.cover_img}
-                          alt={post.frontmatter.title}
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                      <div className="px-3 py-4">
-                        <p className="text-base font-semibold dark:text-white group-hover:text-purple-600">
-                          {post.frontmatter.title}
-                        </p>
-                      </div>
-                    </article>
-                  </a>
-                </Link>
+                <article className="dark:bg-gray-940  dark:text-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
+                  <div className="relative w-full h-80 md:h-64 lg:h-44">
+                    <img
+                      src={post.frontmatter.cover_img}
+                      alt={post.frontmatter.title}
+                      className="w-full h-full object-center object-cover"
+                    />
+                  </div>
+                  <div className="px-3 py-4">
+                    <p className="text-base font-semibold dark:text-white">
+                      {post.frontmatter.title}
+                    </p>
+                    <Link key={index} href={`/blog/${post.slug}`}>
+                      <a className="flex justify-center mt-4  text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
+                        Read More
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          className="h-8 w-6 ml-1 text-pink-500"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
+                          />
+                        </svg>
+                      </a>
+                    </Link>
+                  </div>
+                </article>
               ))}
             </section>
           </article>
