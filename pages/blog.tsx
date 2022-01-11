@@ -25,7 +25,10 @@ export default function blog({ posts }) {
             {/* CARD 1 */}
             <section className="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 ">
               {posts.map((post, index) => (
-                <article className="dark:bg-gray-940  dark:text-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
+                <article
+                  key={index}
+                  className="dark:bg-gray-940  dark:text-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200"
+                >
                   <div className="relative w-full h-80 md:h-64 lg:h-44">
                     <img
                       src={post.frontmatter.cover_img}
@@ -37,7 +40,7 @@ export default function blog({ posts }) {
                     <p className="text-base font-semibold dark:text-white">
                       {post.frontmatter.title}
                     </p>
-                    <Link key={index} href={`/blog/${post.slug}`}>
+                    <Link href={`/blog/${post.slug}`}>
                       <a className="flex justify-center mt-4  text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
                         Read More
                         <svg
