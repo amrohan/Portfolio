@@ -17,8 +17,8 @@ export default function Home() {
               className=" mx-auto object-center rounded w-5/6 md:w-8/12"
               alt="hero"
               src="/hero.svg"
-              width={300}
-              height={300}
+              width="300"
+              height="300"
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
