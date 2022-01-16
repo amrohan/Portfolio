@@ -5,10 +5,11 @@ import matter from "gray-matter";
 import { sortByDate } from "../sort";
 import Link from "next/link";
 import MetaTags from "../components/MetaTags";
+import Image from "next/image";
 
 export default function blog({ posts }) {
   return (
-    <div className=" h-full w-full dark:bg-gray-950 dark:text-white ">
+    <div className=" h-full w-full dark:bg-gray-950 dark:text-white">
       {/* Adding meta  */}
       <MetaTags
         title="Project | Blog Page 🔥- amrohan"
@@ -30,9 +31,12 @@ export default function blog({ posts }) {
                   className="dark:bg-gray-940  dark:text-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200"
                 >
                   <div className="relative w-full h-80 md:h-64 lg:h-44">
-                    <img
+                    <Image
                       src={post.frontmatter.cover_img}
                       alt={post.frontmatter.title}
+                      layout="fill"
+                      placeholder="blur"
+                      blurDataURL="data:image/webp;base64,UklGRowCAABXRUJQVlA4WAoAAAAgAAAAgQAAgQAASUNDUBgCAAAAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANlZQOCBOAAAAcAcAnQEqggCCAD7tdrhWKaclI6BoATAdiWlu4XVAADuh1VJsmIdVSbJiHVUmyYh1VJsmIdVSbJiHVUmyYh1VJsmIMAAA/v7oUgAAAAAA"
                       className="w-full h-full object-center object-cover"
                     />
                   </div>
