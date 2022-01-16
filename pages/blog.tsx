@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function blog({ posts }) {
   return (
-    <div className=" h-full w-full dark:bg-gray-950 dark:text-white">
+    <>
       {/* Adding meta  */}
       <MetaTags
         title="Project | Blog Page 🔥- amrohan"
@@ -17,7 +17,7 @@ export default function blog({ posts }) {
         image="https://res.cloudinary.com/amrohan/image/upload/v1641026544/Images/e1ffa8bll07ebpal4esa.png"
       />
 
-      <div className="w-full h-full dark:bg-gray-950 dark:text-white">
+      <div className="w-full h-full bg-slate-50 dark:bg-gray-950 dark:text-white">
         <section className="absoulute mt-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 dark:bg-gray-950 dark:text-white text-center">
           <article className="pt-32">
             <h2 className="text-6xl mb-10 font-extrabold text-pink-300 ">
@@ -70,7 +70,7 @@ export default function blog({ posts }) {
           </article>
         </section>
       </div>
-    </div>
+    </>
   );
 }
 

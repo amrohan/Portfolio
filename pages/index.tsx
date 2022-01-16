@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-screen bg-gray-950 flex flex-col justify-center content-center">
+    <div className="h-screen bg-slate-50 dark:bg-gray-950 flex flex-col justify-center content-center">
       <MetaTags
         title="Rohan Salunkhe - amrohan personal website"
         description="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
