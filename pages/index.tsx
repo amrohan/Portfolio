@@ -36,9 +36,13 @@ export default function Home() {
             </p>
             <div className="flex justify-center">
               <Link href="/blog">
-                <button className="inline-flex dark:text-white border-pink-600 border-2 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">
-                  <a aria-label="Right Align">Blog</a>
-                </button>
+                <a
+                  aria-label="Right Align"
+                  type="button"
+                  className="inline-flex dark:text-white border-pink-600 border-2 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg"
+                >
+                  Blog
+                </a>
               </Link>
             </div>
           </div>
