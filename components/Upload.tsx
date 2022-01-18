@@ -11,7 +11,7 @@ function Upload() {
    */
 
   function handleOnChange(changeEvent) {
-    const reader = new FileReader();
+    const reader: any = new FileReader();
 
     reader.onload = function (onLoadEvent) {
       setImageSrc(onLoadEvent.target.result);
@@ -29,7 +29,7 @@ function Upload() {
   async function handleOnSubmit(event) {
     event.preventDefault();
     const form = event.currentTarget;
-    const fileInout = Array.from(form.elements).find(
+    const fileInout: any = Array.from(form.elements).find(
       ({ name }) => name === "file"
     );
 
@@ -55,17 +55,23 @@ function Upload() {
 
     console.log("data", data);
   }
+
+  function copyData() {
+    navigator.clipboard.writeText(uploadData);
+    document.getElementById("copyBtn").innerText = "Copied!";
+  }
   return (
-    <div className="w-screen text-bold pt-32 dark:bg-gray-950 dark:text-white overflow-hidden">
-      <div className="grid place-items-center mr-auto ml-auto">
+    <div className="w-full text-bold pt-32 dark:bg-gray-950 dark:text-white overflow-hidden">
+      <div className="grid place-items-center mx-auto">
         <main className="prose prose-slate">
           <div className="text-centerleading-10">
-            <h1
-              id="up"
-              className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-800"
-            >
-              Upload Images Here
+            <h1 id="up" className="font-extrabold text-pink-800">
+              Upload Images
             </h1>
+            <p className="text-lg dark:text-white">
+              Here you can upload your images and share a link with anyone,
+              anywhere.
+            </p>
           </div>
 
           <form
@@ -75,8 +81,8 @@ function Upload() {
             onSubmit={handleOnSubmit}
           >
             <div className="grid place-items-center w-full">
-              <input className="hover:text-2xl" type="file" name="file" />
-              <img src={imageSrc} alt="Next-Image" className="pt-6" />
+              <input className="dark:text-white" type="file" name="file" />
+              <img src={imageSrc} alt="Upload your images" className="pt-6" />
             </div>
 
             {imageSrc && !uploadData && (
@@ -88,23 +94,23 @@ function Upload() {
             )}
 
             {uploadData && (
-              <div className="max-w-md mt-10 ">
-                <code className="w-auto text-center content-center flex flex-col justify-center">
-                  <span className="text-xl">
-                    <span className="font-extrabold text-2xl text-gray-300">
-                      Url 👇
-                    </span>
-                  </span>
-
-                  <pre className="text-blue-300 md:w-full">
-                    {JSON.stringify(uploadData, null, 2)}
-                  </pre>
-                  {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-                    <a href={uploadData} className="dark:text-white">
-                      Check Image
-                    </a>
-                  </button> */}
-                </code>
+              <div className="w-full mt-5 text-center">
+                <button
+                  onClick={copyData}
+                  className=" grid place-items-center grid-cols-2 justify-center bg-blue-500 hover:bg-indigo-800 dark:text-white font-bold py-2 px-4 mx-auto rounded"
+                >
+                  <span id="copyBtn">Copy Url</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="text-center w-full"
+                  >
+                    <path d="M7 16h10v1h-10v-1zm0-1h10v-1h-10v1zm15-13v22h-20v-22h3c1.229 0 2.18-1.084 3-2h8c.82.916 1.771 2 3 2h3zm-11 1c0 .552.448 1 1 1s1-.448 1-1-.448-1-1-1-1 .448-1 1zm9 1h-4l-2 2h-3.898l-2.102-2h-4v18h16v-18zm-13 9h10v-1h-10v1zm0-2h10v-1h-10v1z" />
+                  </svg>
+                </button>
               </div>
             )}
           </form>
