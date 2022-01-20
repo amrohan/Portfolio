@@ -63,7 +63,7 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
-          <div className="flex w-full justify-center content-center p-2  ">
+          <div className="flex w-full justify-center content-center p-2">
             <ul className="w-full flex justify-center text-center">
               <li className="px-4">
                 <a href="https://github.com/amrohan">
