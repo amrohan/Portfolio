@@ -29,7 +29,7 @@ export default function PostPage({
 
           <div className="p-6">
             {/* Using here to make it available in dark and light mode */}
-            <div className="dark:text-white text-black">
+            <div className="dark:text-white">
               <span className="text-xs font-medium text-pink-600 uppercase dark:text-pink-500">
                 {type}
               </span>

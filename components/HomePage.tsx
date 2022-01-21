@@ -1,26 +1,26 @@
 import React from "react";
-import Link from "next/link";
 import MetaTags from "./MetaTags";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Homepage() {
   return (
     <>
-      <div className="max-w-4xl mx-auto h-screen bg-slate-50 dark:bg-gray-950 flex flex-col justify-center content-center">
+      <div className="max-w-4xl mx-auto h-full bg-slate-50 dark:bg-gray-950 flex flex-col justify-center content-center">
         <MetaTags
           title="Rohan Salunkhe - amrohan personal website"
           description="Rohan Salunkhe's personal website, which includes links to my social media accounts as well as links to my most recent projects, blogs, and posts on GitHub, dev.to, and hashnode."
           image="https://res.cloudinary.com/amrohan/image/upload/v1641026544/Images/e1ffa8bll07ebpal4esa.png"
         />
-        <section className=" bg-slate-50 dark:bg-gray-950 flex">
+        <section className=" font-sans bg-slate-50 dark:bg-gray-950 flex">
           <div className=" mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
-            <div className="md:mb-0 mb-10">
+            <div className="md:mb-0 mb-2">
               <Image
                 className=" mx-auto object-center rounded"
                 alt="hero"
                 src="/hero.svg"
-                width="350"
-                height="400"
+                width="250"
+                height="406"
                 placeholder="blur"
                 blurDataURL="data:image/webp;base64,UklGRowCAABXRUJQVlA4WAoAAAAgAAAAgQAAgQAASUNDUBgCAAAAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANlZQOCBOAAAAcAcAnQEqggCCAD7tdrhWKaclI6BoATAdiWlu4XVAADuh1VJsmIdVSbJiHVUmyYh1VJsmIdVSbJiHVUmyYh1VJsmIMAAA/v7oUgAAAAAA"
               />
