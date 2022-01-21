@@ -5,7 +5,7 @@ const NavBar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <>
+    <nav>
       {showSidebar ? (
         <button
           className="flex text-4xl dark:text-white items-center cursor-pointer fixed right-10 top-5 z-50 hover:text-pink-300"
@@ -133,7 +133,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 

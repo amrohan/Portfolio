@@ -13,15 +13,15 @@ export default function Home() {
   // using loading state to show/hide loader
   if (loading) {
     return (
-      <div className="w-full h-screen bg-slate-50 dark:bg-gray-950">
+      <main className="w-full h-screen bg-slate-50 dark:bg-gray-950">
         <Loader />
-      </div>
+      </main>
     );
   } else {
     return (
-      <div className="w-full h-screen bg-slate-50 dark:bg-gray-950">
+      <main className="w-full h-screen bg-slate-50 dark:bg-gray-950">
         <HomePage />
-      </div>
+      </main>
     );
   }
 }

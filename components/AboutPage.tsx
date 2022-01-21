@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const AboutPage = () => {
   return (
-    <div className="text-bold pt-40  dark:bg-gray-950 dark:text-white md:flex md:flex-col md:justify-center md:pt-0 md:h-screen md:w-screen md:text-right">
+    <main className="text-bold pt-40  dark:bg-gray-950 dark:text-white md:flex md:flex-col md:justify-center md:pt-0 md:h-screen md:w-screen md:text-right">
       <h1 className="text-2xl font-bold text-left md:text-center mb-4 leading-8 ">
         {/* Passing empty string for blank space */}
         <span className="font-semibold text-3xl dark:text-gray-300 md:hidden">
@@ -28,7 +28,7 @@ const AboutPage = () => {
           </Link>
         </p>
       </div>
-    </div>
+    </main>
   );
 };
 

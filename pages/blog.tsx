@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function blog({ posts }) {
   return (
-    <>
+    <main>
       {/* Adding meta  */}
       <MetaTags
         title="Project | Blog Page 🔥- amrohan"
@@ -70,7 +70,7 @@ export default function blog({ posts }) {
           </article>
         </section>
       </div>
-    </>
+    </main>
   );
 }
 
