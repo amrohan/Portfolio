@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import MarkdownWrapper from "../../components/MarkdownWrapper";
 
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -36,34 +35,34 @@ export default function PostPage({
               {/* <span className="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white">
                 {title}
               </span> */}
-              <MarkdownWrapper>
-                {/* Passing markdown content into ReactMarkdown component */}
 
-                <ReactMarkdown
-                  remarkPlugins={[remarkGfm]}
-                  rehypePlugins={[rehypeRaw]}
-                  components={{
-                    code({ node, inline, className, children, ...props }) {
-                      const match = /language-(\w+)/.exec(className || "");
-                      return !inline && match ? (
-                        <SyntaxHighlighter
-                          style={coldarkDark}
-                          language={match[1]}
-                          {...props}
-                        >
-                          {String(children).replace(/\n$/, "")}
-                        </SyntaxHighlighter>
-                      ) : (
-                        <code className={className} {...props}>
-                          {children}
-                        </code>
-                      );
-                    },
-                  }}
-                >
-                  {content}
-                </ReactMarkdown>
-              </MarkdownWrapper>
+              {/* Passing markdown content into ReactMarkdown component */}
+
+              <ReactMarkdown
+                className="prose prose-slate prose-pre:rounded-xl dark:prose-invert prose-img:shadow-2xl prose-video:rounded-2xl  prose-strong:text-yellow-400 prose-img:w-10/12 md:prose-img:w-11/12 prose-img:mx-auto prose-video:mx-auto prose-blockquote:text-cyan-600 lg:prose-l prose-a:text-teal-600 hover:prose-a:text-teal-500 prose-img:rounded-2xl "
+                remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeRaw]}
+                components={{
+                  code({ node, inline, className, children, ...props }) {
+                    const match = /language-(\w+)/.exec(className || "");
+                    return !inline && match ? (
+                      <SyntaxHighlighter
+                        style={coldarkDark}
+                        language={match[1]}
+                        {...props}
+                      >
+                        {String(children).replace(/\n$/, "")}
+                      </SyntaxHighlighter>
+                    ) : (
+                      <code className={className} {...props}>
+                        {children}
+                      </code>
+                    );
+                  },
+                }}
+              >
+                {content}
+              </ReactMarkdown>
             </div>
 
             <div className="mt-4">

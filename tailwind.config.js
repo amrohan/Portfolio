@@ -17,6 +17,13 @@ module.exports = {
           100: "#0d1117",
         },
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            pre: false,
+          },
+        },
+      }),
     },
   },
   variants: {
