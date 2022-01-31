@@ -39,7 +39,7 @@ export default function PostPage({
               {/* Passing markdown content into ReactMarkdown component */}
 
               <ReactMarkdown
-                className="prose prose-slate prose-pre:rounded-xl prose-pre:text-sm  dark:prose-invert prose-img:shadow-2xl prose-video:rounded-2xl  prose-strong:text-yellow-400 prose-img:w-10/12 md:prose-img:w-11/12 prose-img:mx-auto prose-video:mx-auto prose-blockquote:text-cyan-600 lg:prose-l prose-a:text-teal-600 hover:prose-a:text-teal-500 prose-img:rounded-lg"
+                className="prose prose-slate prose-pre:rounded-xl prose-pre:text-sm  dark:prose-invert prose-img:shadow-2xl prose-video:rounded-2xl  prose-strong:text-yellow-400 prose-img:w-11/12 prose-img:mx-auto prose-video:mx-auto prose-blockquote:text-cyan-600 lg:prose-l prose-a:text-teal-600 hover:prose-a:text-teal-500 prose-img:rounded-lg"
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeRaw]}
                 components={{
