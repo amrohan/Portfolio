@@ -17,45 +17,43 @@ Here's the quickest way to do it in under 2 minutes.
 
 [Live Preview](https://auth0.amrohan.com)
 
----
-
 ## Setup
 
-### 1. [Go to Auth0 SignUp or Login](https://auth0.com/)
+1.  Go to Auth0 [ Sign Up or Login](https://auth0.com/)
 
-### 2. Click on Applications
+2.  Click on Applications
 
 ![Step 2 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277234/Images/khtqov4vl3t0vhlrkrde.jpg)
 
-### 3. Click on Applications
+3.  Click on Applications
 
 ![Step 3 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277379/Images/busubmuuhaewrnatqj6c.jpg)
 
-### 4. Click on Create Application
+4.  Click on Create Application
 
 ![Step 4 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277447/Images/cehpzo2mgolcuy7krala.jpg)
 
-### 5. Paste name of the app into input
+5.  Paste name of the app into input
 
 ![Step 5 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277570/Images/mn41hnaqxqrmhh3bmchd.jpg)
 
-### 6. Click on Regular app
+6.  Click on Regular app
 
 ![Step 6 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277606/Images/zajkcjjwhfuq4xcn40uq.png)
 
-### 7. Click on Create
+7.  Click on Create
 
 ![Step 7 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277699/Images/qi8nu70lpuim9acewux5.jpg)
 
-### 8. Click on Settings
+8.  Click on Settings
 
 ![Step 8 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277781/Images/zefgsqk2tgaccbczbimx.jpg)
 
-### 9. Type `http://localhost:3000/api/auth/callback`
+9.  Type `http://localhost:3000/api/auth/callback`
 
 ![Step 9 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643268006/Images/yhdwt1hczz56k9h6ns1u.png)
 
-### 10. Type `http://localhost:3000`
+10. Type `http://localhost:3000`
 
 ![Step 10 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277873/Images/zpfhsvbiq5a58mxs1gx4.jpg)
 
@@ -63,11 +61,11 @@ Here's the quickest way to do it in under 2 minutes.
 > `http://locahost:3000/api/auth/callback` to `http://yourdomain.com/api/auth/callback`
 > Same for **Logout URL's**
 
-### 11. Click on Save Changes
+11. Click on Save Changes
 
 ![Step 11 screenshot](https://res.cloudinary.com/amrohan/image/upload/v1643277951/Images/ppqui2vtj8v6b0whcqyz.jpg)
 
-### 12. Scroll up take note of your `domain` , `client id` and `client secret`
+12. Scroll up take note of your `domain` , `client id` and `client secret`
 
 ![client](https://res.cloudinary.com/amrohan/image/upload/v1643266253/Images/uucxduvqgsizdb0bauwx.png)
 
@@ -75,9 +73,9 @@ Here's the quickest way to do it in under 2 minutes.
 
 ## Now create a Nextjs App
 
-### 1 . `yarn create next-app`
+1 . `yarn create next-app`
 
-### 2 . Create **`.env.local`** and paste your secrets here
+2 . Create **`.env.local`** and paste your secrets here
 
 ```txt
 # A long, secret value used to encrypt the session cookie use any random 32 character string
@@ -96,7 +94,7 @@ AUTH0_CLIENT_ID = 'YOUR_AUTH0_CLIENT_ID'
  AUTH0_CLIENT_SECRET = 'YOUR_AUTH0_CLIENT_SECRET'
 ```
 
-### 3 . Install **@auth0/nextjs-auth0** SDK
+3 . Install **@auth0/nextjs-auth0** SDK
 
 ```bash
 npm install @auth0/nextjs-auth0
@@ -104,13 +102,13 @@ npm install @auth0/nextjs-auth0
 yarn add @auth0/nextjs-auth0
 ```
 
-### 4 . Get your environment variables
+4 . Get your environment variables
 
-### 5 . Step copy your secrets to `.env.local`
+5 . Step copy your secrets to `.env.local`
 
 ![Client Secrets](https://res.cloudinary.com/amrohan/image/upload/v1643265969/Images/mpomhav6oxnhosxjcjpg.png)
 
-### 6 . Go to `pages/api/` create a new file `auth/[...auth0].js` this will create folder `auth` and file `[...auth0].js`
+6 . Go to `pages/api/` create a new file `auth/[...auth0].js` this will create folder `auth` and file `[...auth0].js`
 
 > `[...auth0]js` to catch all slug so we can use same route for login and logout
 
@@ -122,7 +120,7 @@ import { handleAuth } from "@auth0/nextjs-auth0";
 export default handleAuth();
 ```
 
-### 7. Wrap your `pages/_app.js` component with the UserProvider component.
+7.  Wrap your `pages/_app.js` component with the UserProvider component.
 
 ```javascript
 // pages/_app.js
@@ -139,7 +137,7 @@ export default function App({ Component, pageProps }) {
 }
 ```
 
-### 8 . Now lets implement this inside our `pages/index.js` page
+8 . Now lets implement this inside our `pages/index.js` page
 
 ```javascript
 // pages/index.js
@@ -160,7 +158,7 @@ export default function Index() {
 }
 ```
 
-### 9 . Now Run your nextjs app via
+9 . Now Run your nextjs app via
 
 ```bash
 npm run dev
@@ -168,7 +166,7 @@ npm run dev
 yarn dev
 ```
 
-### 10 . Now you can login to your app and also be able to logout
+10 . Now you can login to your app and also be able to logout
 
 ![gif](https://res.cloudinary.com/amrohan/image/upload/v1643274460/Images/byh471jkezkslj75vcca.gif)
 
