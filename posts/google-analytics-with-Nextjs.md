@@ -3,7 +3,7 @@ title: "Google Analytics with Next.js"
 date: "Mar 18 2022"
 desc: "This is a blog post about how to use Google Analytics with Next.js"
 type: "Blog"
-cover_img: "/Blog/fn.webp"
+cover_img: "/Blog/fb.png"
 auther: "Rohan Salunkhe"
 ---
 
