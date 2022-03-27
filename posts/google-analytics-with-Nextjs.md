@@ -29,7 +29,7 @@ https://analytics.google.com/analytics/web/#/a212549130p293139592/admin/account/
 
 After setting up, we will get a code to paste inside the <head> section of our website.
 
-![Analytics page sreenshot](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/93b1a372-e8ce-48bf-841c-95888afb1d3b/Screenshot-2021-11-14-at-12.22.46-PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220318%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220318T134828Z&X-Amz-Expires=86400&X-Amz-Signature=66824f4d638c290a802254c8bb8c3b120345939d1908ce9dfe0904d5c0561045&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot-2021-11-14-at-12.22.46-PM.png%22&x-id=GetObject)
+![Analytics page sreenshot](https://res.cloudinary.com/amrohan/image/upload/v1648392109/Images/rd2jxgdsxmezwdojeaqs.png)
 
 Just copy the MEASUREMENT ID **(G-{Your Code})** from this code.
 
