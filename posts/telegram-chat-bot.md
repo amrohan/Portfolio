@@ -13,7 +13,7 @@ A is a simple Telegram bot that responds to users automatically when they commun
 
 ## Demo
 
-Test the bot here 👉 [Chat-Bot](https://t.me/amrohanbot)
+Test the bot here 👉 [Chat-Bot](https://t.me/amrohan_bot)
 
 ## Create Bot
 
