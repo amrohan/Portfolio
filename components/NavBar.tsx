@@ -82,7 +82,7 @@ const NavBar = () => {
 
               {/* Instagram SVG */}
               <li className="px-4 ">
-                <a href="https://www.instagram.com/amrohann">
+                <a href="https://www.instagram.com/amrohxn">
                   <svg
                     className="fill-current hover:text-pink-300 text-center w-full"
                     xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ const NavBar = () => {
 
               {/* Twitter Svg */}
               <li className="px-4 text-center">
-                <a href="https://www.twitter.com/rohansalunkhe_">
+                <a href="https://www.twitter.com/amrohxn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
