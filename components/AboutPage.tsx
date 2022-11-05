@@ -21,10 +21,11 @@ const AboutPage = () => {
       <div className="text-xl ml-4 md:text-center md:ml-0 text-gray-400">
         <p>
           {"In the meantime, take a look at my"}
-          <Link href="/blog">
-            <a className="p-2 text-yellow-500 font-mono font-semibold text-2xl hover:text-green-600">
-              Blog
-            </a>
+          <Link
+            href="/blog"
+            className="p-2 text-yellow-500 font-mono font-semibold text-2xl hover:text-green-600"
+          >
+            Blog
           </Link>
         </p>
       </div>

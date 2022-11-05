@@ -1,14 +1,13 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-// Using Layout so we can wrap things into _app.js so component can be mounted on every page
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
   return (
-    <header>
-      <NavBar />
+    <main className="h-full w-full">
+      <div className="max-w-5xl mx-auto pb-5">
+        <NavBar />
+      </div>
       {children}
-    </header>
+    </main>
   );
-};
-
-export default Layout;
+}

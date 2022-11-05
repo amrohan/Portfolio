@@ -2,6 +2,7 @@ import "../styles/index.css";
 import Layout from "../components/Layout";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { ThemeProvider } from "next-themes";
 
 declare global {
   interface Window {
@@ -25,9 +26,11 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider attribute="class">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   );
 }
 

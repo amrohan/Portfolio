@@ -44,24 +44,25 @@ export default function blog({ posts }) {
                     <p className="text-base font-semibold dark:text-white">
                       {post.frontmatter.title}
                     </p>
-                    <Link href={`/blog/${post.slug}`}>
-                      <a className="flex justify-center mt-4  text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
-                        Read More
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          className="h-8 w-6 ml-1 text-pink-500"
-                        >
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
-                          />
-                        </svg>
-                      </a>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="flex justify-center mt-4  text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
+                    >
+                      Read More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        className="h-8 w-6 ml-1 text-pink-500"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
+                        />
+                      </svg>
                     </Link>
                   </div>
                 </article>

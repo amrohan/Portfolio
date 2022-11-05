@@ -73,10 +73,11 @@ export default function PostPage({
                     src="/me.webp"
                     alt="Avatar"
                   />
-                  <Link href="/about">
-                    <a className="mx-2 font-semibold text-slate-600 dark:text-slate-100">
-                      {auther}
-                    </a>
+                  <Link
+                    href="/about"
+                    className="mx-2 font-semibold text-slate-600 dark:text-slate-100"
+                  >
+                    {auther}
                   </Link>
                 </div>
                 <span className="mx-1 text-xs text-gray-600 dark:text-slate-100">
