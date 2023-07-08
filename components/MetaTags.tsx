@@ -3,14 +3,14 @@ import { NextSeo } from "next-seo";
 
 export default function MetaTags({ title, description, image }) {
   return (
-    <div>
+    <>
       <NextSeo
         title={title}
         description={description}
         openGraph={{
           url: "https://amrohan.com",
-          title: title,
-          description: description,
+          title,
+          description,
           images: [
             {
               url: image,
@@ -23,10 +23,16 @@ export default function MetaTags({ title, description, image }) {
         }}
         twitter={{
           handle: "@rohansalunkhe_",
-          site: "https://amrohan.com/",
+          site: "@amrohan",
           cardType: "summary_large_image",
         }}
+        additionalMetaTags={[
+          {
+            name: "ms:profile",
+            content: "https://mastodon.social/@amrohan",
+          },
+        ]}
       />
-    </div>
+    </>
   );
 }
